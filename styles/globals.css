@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;500;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #223581;
+  --secondary-color: #ff914d;
+  --secondary-color-transparent: rgba(255, 145, 77, .3);
+  --text-color: #f4f4f4;
+}
+
+body {
+  background: radial-gradient(circle, transparent 20%, #223581 20%, #223581 80%, transparent 80%, transparent) 0% 0% / 64px 64px, radial-gradient(circle, transparent 20%, #223581 20%, #223581 80%, transparent 80%, transparent) 32px 32px / 64px 64px, linear-gradient(#ff914d 2px, transparent 2px) 0px -1px / 32px 32px, linear-gradient(90deg, #ff914d 2px, #223581 2px) -1px 0px / 32px 32px #223581;
+  background-color: #223581;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 2px solid #000;
+  background: var(--text-color);
+  border-radius: 10px;
+}
