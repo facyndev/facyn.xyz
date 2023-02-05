@@ -3,7 +3,10 @@ import styles from '../styles/all.module.css';
 
 export default function Notfound() {
   return (
-        <Layout>
+        <Layout
+          title="Busqueda no encontrada - Facyn"
+          description="Pagina no encontrada."
+        >
             <div className={styles.pageNotfound}>
                 <h1>404</h1>
                 <h3>Oopss... No se ha encontrado la página que buscas.</h3>

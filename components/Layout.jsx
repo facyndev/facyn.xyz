@@ -2,12 +2,12 @@ import Head from 'next/head';
 import React, { Fragment, useEffect } from 'react';
 import styles from '../styles/all.module.css';
 
-export function Layout({ children }) {
+export function Layout({ children, title, description }) {
   return (
     <Fragment>
       <Head>
-        <meta name="title" content="Facyn" />
-        <meta name="description" content="Portafolio Personal." />
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
         <meta name="keywords" content="blog, blogpost, portafolio, aboutme, posts, blogs, guias, desarrollo web, web, html, js, css, javascript, dev, developer, desarrollador" />
         <meta name="sitedomain" content="facyn.xyz" />
         <meta name="designer" content="Facyn" />
@@ -19,8 +19,8 @@ export function Layout({ children }) {
         <meta name="theme-color" content="#007aff" data-react-helmet="true" />
         <meta name="apple-mobile-web-app-title" content="Facyn" />
         <meta name="application-name" content="Facyn" />
-        <meta property="og:title" content="Facyn" />
-        <meta property="og:description" content="Portafolio Personal." />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:url" content="https://facyn.xyz" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
@@ -32,6 +32,7 @@ export function Layout({ children }) {
         <meta name="twitter:image" content="https://facyn.xyz/facyn.ico" />
         <meta name="twitter:site" content="Facyn"/ >
         <link rel="icon" href="/facyn.ico" />
+        <title>{title}</title>
       </Head>
 
       <nav className={styles.navegation}>
@@ -53,4 +54,9 @@ export function Layout({ children }) {
       </div>
     </Fragment>
   )
+}
+
+Layout.defaultProps = {
+  title: 'Inicio - Facyn',
+  description: 'Portafolio Personal.'
 }

@@ -4,7 +4,10 @@ import { FaYoutube, FaInstagram, FaDiscord, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   return (
-      <Layout>
+      <Layout
+        title="Inicio - Facyn"
+        description="Portafolio Personal."
+      >
           <div className={styles.presentation}>
             <div className={styles.presentationAboutMe}>
               <div>
