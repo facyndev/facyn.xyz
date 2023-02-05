@@ -7,8 +7,8 @@ export function Layout({ children }) {
     <Fragment>
       <Head>
         <meta name="title" content="Facyn" />
-        <meta name="description" content="Articulos de tu preferencia, guías, diseños y demás sobre el desarrollo web." />
-        <meta name="keywords" content="blog, blogpost, portafolio, aboutme, posts, blogs, guias, desarrollo web, web, html, js, css, javascript" />
+        <meta name="description" content="Portafolio Personal." />
+        <meta name="keywords" content="blog, blogpost, portafolio, aboutme, posts, blogs, guias, desarrollo web, web, html, js, css, javascript, dev, developer, desarrollador" />
         <meta name="sitedomain" content="facyn.xyz" />
         <meta name="designer" content="Facyn" />
         <meta name="robots" content="index, follow" />
@@ -16,11 +16,11 @@ export function Layout({ children }) {
         <meta name="googlebot" content="index, follow" />
         <meta name="author" content="Facyn" />
         <meta name="copyright" content="© 2022 Facyn" />
-        <meta name="theme-color" content="#223581" data-react-helmet="true" />
+        <meta name="theme-color" content="#007aff" data-react-helmet="true" />
         <meta name="apple-mobile-web-app-title" content="Facyn" />
         <meta name="application-name" content="Facyn" />
         <meta property="og:title" content="Facyn" />
-        <meta property="og:description" content="Articulos de tu preferencia, guías, diseños y demás sobre el desarrollo web." />
+        <meta property="og:description" content="Portafolio Personal." />
         <meta property="og:url" content="https://facyn.xyz" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_ES" />
@@ -34,31 +34,22 @@ export function Layout({ children }) {
         <link rel="icon" href="/facyn.ico" />
       </Head>
 
-      <nav className={styles.pageNavegation}>
+      <nav className={styles.navegation}>
+        <div className={styles.navegationWrapper}>
         <a href="/">
-          <img className={styles.pageLogo} src="/facyn.ico" alt="Facyn Logo" />
+          <img src="/facyn.ico" alt="Facyn Logo" />
+          <strong>Facyn</strong>
         </a>
         <ul>
           <li><a href="/">Inicio</a></li>
-          <li><a href="/proyectos">Proyectos</a></li>
-          <li><a href="/posts">Blog</a></li>
         </ul>
+        </div>
       </nav>
 
-      <div className={styles.pageContent}>
+      <div className={styles.pageWrapper}>
 
-        <main>{children}</main>
+        <main className={styles.body}>{children}</main>
 
-        <footer className={styles.pageFooter}>
-          <span>Copyright &copy; 2022 - Facyn</span>
-          <ul>
-            <li><a href="/politicadeprivacidad" target="_blank">Privacidad</a></li>
-            <span>&bull;</span>
-            <li><a href="/politicadecookies" target="_blank">Cookies</a></li>
-            <span>&bull;</span>
-            <li><a href="/social/discord" target="_blank">Soporte</a></li>
-          </ul>
-        </footer>
       </div>
     </Fragment>
   )
