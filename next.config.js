@@ -8,6 +8,11 @@ module.exports = {
                 permanent: true
             },
             {
+                source: '/twitch',
+                destination: 'https://www.twitch.tv/facynnnnn',
+                permanent: true
+            },
+            {
                 source: '/youtube',
                 destination: 'https://www.youtube.com/@Facynnn',
                 permanent: true
