@@ -36,6 +36,16 @@ module.exports = {
                 source: '/rashsecurity',
                 destination: 'https://rashsecurity.xyz',
                 permanent: true
+            },
+            {
+                source: '/simplecalculator',
+                destination: 'https://simplecalculator.ml',
+                permanent: true
+            },
+            {
+                source: '/todolistapp',
+                destination: 'https://todolistapp.tk/',
+                permanent: true
             }
         ]
     }

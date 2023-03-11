@@ -38,11 +38,12 @@ export function Layout({ children, title, description }) {
       <nav className={styles.navegation}>
         <div className={styles.navegationWrapper}>
         <a href="/">
-          <img src="/facyn.ico" alt="Facyn Logo" />
-          <strong>Facyn</strong>
+          <img src="/facyn.ico" alt="Facyn Logo" className={styles.logoImg}/>
+          <strong className={styles.logoName}>Facyn</strong>
         </a>
         <ul>
           <li><a href="/">Inicio</a></li>
+          <li><a href="/projects">Proyectos</a></li>
         </ul>
         </div>
       </nav>
