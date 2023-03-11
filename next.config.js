@@ -31,6 +31,11 @@ module.exports = {
                 source: '/contacto',
                 destination: 'mailto:contacto@facyn.xyz',
                 permanent: true
+            },
+            {
+                source: '/rashsecurity',
+                destination: 'https://rashsecurity.xyz',
+                permanent: true
             }
         ]
     }
